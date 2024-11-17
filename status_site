@@ -1,0 +1,8 @@
+#!/bin/bash
+read -p "Digite a URL: " url
+if ping -c 1 $url &> /dev/null
+then
+  echo "$url está online."
+else
+  echo "$url está offline."
+fi
